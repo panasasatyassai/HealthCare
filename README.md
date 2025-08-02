@@ -4,17 +4,23 @@ A fully client-side React application for booking appointments with doctors. Use
 
 ---
 
-##  Live Demo
+# Live Demo
+** Note: This project currently runs only in development mode using npm start.
+Please clone and run it locally. The production build (npm run build) may show warnings or fail due to dependency issues.
 
-- [View Live on Vercel](https://your-vercel-deployment-url.vercel.app)
+# GitHub Repository 
 
----
+* How to Run Locally 
+-- git clone https://github.com/panasasatyassai/medical-appointment-ui.git
+--cd medical-appointment-ui
+--npm install
+-- npm start
+== The development server will start at: http://localhost:3000
+== Ignore the deprecation warnings in the terminal – the app runs fine in development mode.
+== npm run build may not work properly due to deprecated middleware options from webpack-dev-server. 
 
-##  GitHub Repository
-
-- [GitHub Repo](https://github.com/panasasatyassai/medical-appointment-ui)
-
----
+# GitHub Repository
+GitHub Repo ==>  https://github.com/panasasatyassai/HealthCare
 
 ##  Tech Stack
 
@@ -22,8 +28,7 @@ A fully client-side React application for booking appointments with doctors. Use
 - **React Router DOM**
 - **UUID** (v4) – For generating unique appointment IDs
 - **localStorage** – For storing appointment data
-- **CSS** – Custom styles (no frameworks)
-- **Vercel** – Deployment platform
+- **CSS** – Custom styles (no frameworks) 
 
 ---
 
@@ -61,8 +66,8 @@ src/
 # Installation & Running Locally
 1 Clone the Repository
  
-git clone https://github.com/panasasatyassai/medical-appointment-ui
--cd healthcare-appointment-app
+git clone https://github.com/panasasatyassai/HealthCare.git
+-cd HealthCare
 
 2. Install Dependencies 
 -npm install
