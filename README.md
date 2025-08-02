@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+#  Healthcare Appointment Booking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A fully client-side React application for booking appointments with doctors. Users can fill in their name, email, and preferred date/time, and their appointments are stored in the browser's `localStorage`. The application also includes routing and a separate page to view all booked appointments.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+##  Live Demo
 
-### `npm start`
+- [View Live on Vercel](https://your-vercel-deployment-url.vercel.app)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+##  GitHub Repository
 
-### `npm test`
+- [GitHub Repo](https://github.com/panasasatyassai/medical-appointment-ui)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React.js**
+- **React Router DOM**
+- **UUID** (v4) – For generating unique appointment IDs
+- **localStorage** – For storing appointment data
+- **CSS** – Custom styles (no frameworks)
+- **Vercel** – Deployment platform
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🔧 Features
 
-### `npm run eject`
+-  Book an appointment (Name, Email, Date/Time)
+-  Unique ID for every booking
+-  Persistent data using `localStorage`
+-  Doctor profile route with dynamic `id` (sample)
+-  Thank You page upon booking confirmation
+-  List of all booked appointments (`/booked-users`)
+-  404 Not Found route
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🗂 Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+src/
+├── components/
+│ ├── AppointmentForm/
+│ ├── BookedUsers/
+│ ├── DoctorCard/
+│ ├── Header/
+│ ├── ThankYou/
+│
+├── pages/
+│ ├── DoctorProfile/
+│ ├── Home/
+│ ├── NotFound/
+│
+├── App.js
+├── index.js
+├── index.css
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Installation & Running Locally
+1 Clone the Repository
+ 
+git clone https://github.com/panasasatyassai/medical-appointment-ui
+-cd healthcare-appointment-app
 
-## Learn More
+2. Install Dependencies 
+-npm install
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. Install UUID 
+-npm install uuid
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. Run the App 
+-npm start
+-The app runs at: http://localhost:3000
 
-### Code Splitting
+# Routing Overview
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Path            | Description                         |
+| --------------- | ----------------------------------- |
+| `/`             | Home page with appointment form     |
+| `/doctor/:id`   | Sample doctor profile               |
+| `/thank-you`    | Shown after a successful submission |
+| `/booked-users` | Lists all booked appointments       |
+| `*`             | 404 Not Found                       |
 
-### Analyzing the Bundle Size
+# Improvements With More Time
+-Add backend (Firebase or Express) for real database storage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+-Include doctor selection from available list
 
-### Making a Progressive Web App
+-Form validation and error display improvements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+-Add cancel/delete option for appointments
 
-### Advanced Configuration
+-Responsive UI with better design using Tailwind or Bootstrap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+# Challenges Faced
+-Handling dynamic routes for doctor profiles
 
-### Deployment
+-Ensuring form validation and conditional rendering
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+-Managing localStorage updates and ensuring data is reactive
 
-### `npm run build` fails to minify
+## 📃 License
+-This project is created as part of the NxtWave Job Assessment and is intended for educational and evaluation purposes only.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Developed By 
+-Panasa Satya Sai
+-- GitHub: @panasasatyassai
